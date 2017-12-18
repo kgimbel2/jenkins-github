@@ -1,6 +1,7 @@
 node {
     stage('Build') {
         echo 'Building....'
+        checkout()
         sh './create-myfile'
     }
     stage('Test') {
