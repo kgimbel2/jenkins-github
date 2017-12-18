@@ -1,13 +1,15 @@
 node {
     stage('Build') {
         echo 'Building....'
+        touch myfile
         echo 'this' >> myfile
     }
     stage('Test') {
         echo 'Testing...'
-        cat myfile
+        sleep 3
     }
     stage('Deploy') {
         echo 'Deploying....'
+        cat myfile
     }
 }
