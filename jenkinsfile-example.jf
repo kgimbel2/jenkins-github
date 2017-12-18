@@ -1,9 +1,11 @@
 node {
     stage('Build') {
         echo 'Building....'
+        echo 'this' >> myfile
     }
     stage('Test') {
-        echo 'Building....'
+        echo 'Testing...'
+        cat myfile
     }
     stage('Deploy') {
         echo 'Deploying....'
