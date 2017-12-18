@@ -1,7 +1,7 @@
 node {
     stage('Build') {
         echo 'Building....'
-        sh '/bin/echo this > myfile'
+        sh 'sleep 3'
     }
     stage('Test') {
         echo 'Testing...'
