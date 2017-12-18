@@ -1,7 +1,7 @@
 node {
     stage('Build') {
         echo 'Building....'
-        sh 'echo this > ./myfile'
+        sh ./create-myfile
     }
     stage('Test') {
         echo 'Testing...'
