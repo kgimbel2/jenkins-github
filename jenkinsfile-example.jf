@@ -1,11 +1,11 @@
 node {
     stage('Build') {
-        echo 'Building....'; sleep 3
+        sleep 3
     }
     stage('Test') {
-        echo 'Testing...'; sleep 3
+        sleep 3
     }
     stage('Deploy') {
-        echo 'Deploying....'; cat ./myfile
+        cat ./myfile
     }
 }
